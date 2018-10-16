@@ -1,0 +1,63 @@
+.post {
+  position: relative;
+  margin-bottom: 8em;
+
+  &__title {
+    margin: 0;
+    font-size: 3em;
+    width: 80%;
+
+    &__text {
+      background: linear-gradient(
+        to top,
+        transparentize($main-color, 1) 13%,
+        $main-color 13%,
+        $main-color 35%,
+        transparentize($main-color, 1) 35%
+      );
+    }
+  }
+
+  &__info {
+    margin: 2em 0;
+    color: lighten($text-color, 10%);
+    font: {
+      size: 0.8em;
+      style: italic;
+    }
+  }
+
+  &__content {
+    width: 45%;
+    margin-left: 5%;
+    line-height: 2.1em;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    max-width: 50%;
+    z-index: -1;
+
+    @media (min-width: 900px) {
+      right: 12em;
+      max-width: 30%;
+    }
+  }
+
+  &__button {
+    background: $main-color;
+    padding: 0.5em 1em;
+    font-weight: $font-weight-bold;
+    border: none
+  }
+
+  &__button:hover {
+    background: $text-color;
+    color: $main-color;
+    padding: 0.5em 1em;
+    border: none;
+  }
+}

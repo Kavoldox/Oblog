@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5em;
+
+  .action-button:hover {
+    color: $main-color;
+    background: $text-color;
+  }
+
+  &__tools {
+    display: flex;
+    align-items: center;
+  }
+}
